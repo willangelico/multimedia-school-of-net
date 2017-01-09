@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+       
+        <title>Multimedia - School of Net</title>
+        <meta name="description" content="">
+       
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+       	<herder class="navbar-header">
+       		<h1 class="navbar-brand">Multimedia</h1>
+       	</herder>
+       	<section>
+       		<h2 class="title">Video</h2>
+       	</section>
+       	<section>
+       		<div class="row text-center">
+       			<video id="video" width="560" controls height="350" poster="img/figure-01.jpg"> 
+       				<!--  autoplay controls muted loop  -->
+       				<source src="media/video.mp4">
+       				Your browser don't support this video
+       				 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+       			</video>
+       		</div>
+       		<div class="row text-center">
+       			<button onclick="play();">Play</button>
+       			<button onclick="pause();">Pause</button>
+       			<button onclick="stop();">Stop</button>     
+       			<input type="range" id="volume" min="0" max="100" value="100" onchange="volume(this.value/100);" />
+       			<button onclick="mute();" id="muted">Mute</button>
+       			<button onclick="full();">Fullscreen</button>
+       		</div>
+       		<div class="row">
+       			<table id="tableList" class="table">
+       				
+       				
+       			</table>
+       		</div>
+       		<br />
+       	</section>  
+       	<script src="js/video.js"></script>   
+    </body>
+</html>
